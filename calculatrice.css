@@ -1,0 +1,75 @@
+/* Style de base */
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5em;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+/* Conteneur pour aligner les boutons */
+div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+/* Style commun pour tous les boutons */
+input[type="button"] {
+    width: 18%;
+    height: 50px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    margin: 2px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Couleur pour les boutons numériques */
+input[type="button"][value="0"], 
+input[type="button"][value="1"],
+input[type="button"][value="2"], 
+input[type="button"][value="3"],
+input[type="button"][value="4"], 
+input[type="button"][value="5"],
+input[type="button"][value="6"], 
+input[type="button"][value="7"],
+input[type="button"][value="8"], 
+input[type="button"][value="9"] {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Couleur pour les boutons des opérations */
+input[type="button"][value="+"], 
+input[type="button"][value="-"],
+input[type="button"][value="*"], 
+input[type="button"][value="/"],
+input[type="button"][value="="], 
+input[type="button"][value="("],
+input[type="button"][value=")"], 
+input[type="button"][value="C"],
+input[type="button"][value="<="] {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Couleur pour les boutons des fonctions */
+input[type="button"][value="log"],
+input[type="button"][value="mod"],
+input[type="button"][value="√"],
+input[type="button"][value="x²"],
+input[type="button"][value="exp"] {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Effet de survol */
+input[type="button"]:hover {
+    background-color: #555;
+    color: #fff;
+}
