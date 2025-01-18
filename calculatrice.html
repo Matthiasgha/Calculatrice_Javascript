@@ -7,7 +7,44 @@
     <link rel="stylesheet" href="calculatrice.css">
 </head>
 <body>
-   
+        <div>
+            <input type="text" id="display" readonly>
+        </div>
+        <div>
+            <input type="button" value="7" onclick="afficher('7')">
+            <input type="button" value="8" onclick="afficher('8')">
+            <input type="button" value="9" onclick="afficher('9')">
+            <input type="button" value="/" onclick="afficher('/')">
+            <input type="button" value="C" onclick="annulation()">
+        </div>
+        <div>
+            <input type="button" value="4" onclick="afficher('4')">
+            <input type="button" value="5" onclick="afficher('5')">
+            <input type="button" value="6" onclick="afficher('6')">
+            <input type="button" value="*" onclick="afficher('*')">
+            <input type="button" value="<=" onclick="suppression()">
+        </div>
+        <div>
+            <input type="button" value="1" onclick="afficher('1')">
+            <input type="button" value="2" onclick="afficher('2')">
+            <input type="button" value="3" onclick="afficher('3')">
+            <input type="button" value="-" onclick="afficher('-')">
+            <input type="button" value="(" onclick="afficher('(')">
+        </div>
+        <div>
+            <input type="button" value="0" onclick="afficher('0')">
+            <input type="button" value="." onclick="afficher('.')">
+            <input type="button" value="=" onclick="calculer()">
+            <input type="button" value="+" onclick="afficher('+')">
+            <input type="button" value=")" onclick="afficher(')')">
+        </div>
+        <div>
+            <input type="button" value="log" onclick="logarithme()">
+            <input type="button" value="mod" onclick="modulo()">
+            <input type="button" value="√" onclick="racine()">
+            <input type="button" value="x²" onclick="puissance()">
+            <input type="button" value="exp" onclick="exponen()">
+        </div>
     <script src="calculatrice.js" defer></script>
 </body>
 </html>
